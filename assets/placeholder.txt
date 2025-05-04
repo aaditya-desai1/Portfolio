@@ -1,0 +1,10 @@
+This folder should contain the following images:
+
+1. hero-image.png - A professional headshot or avatar for the hero section
+2. about-image.png - An image for the about section (you working or a professional photo)
+3. project-clothloop.jpg - Screenshot of the ClothLoop project
+4. project-datavizpro.jpg - Screenshot of the DataVizPro project 
+5. project-hrimwellness.jpg - Screenshot of the HRIM Wellness project
+6. resume.pdf - Your resume/CV in PDF format
+
+Please add these files to complete your portfolio website. 
