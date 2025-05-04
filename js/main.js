@@ -5,6 +5,11 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Navbar load animation
+  setTimeout(() => {
+    document.querySelector('.navbar').classList.add('loaded');
+  }, 300);
+
   // Set default visibility for skill items and project cards
   document.querySelectorAll('.skill-item, .project-card').forEach(item => {
     item.style.opacity = "1";
@@ -47,12 +52,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
+  let lastScrollY = window.scrollY;
+  
   window.addEventListener('scroll', () => {
+    // Basic scroll class for box-shadow
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
+    
+    // Handle slide up/down behavior
+    if (window.scrollY > 150) {
+      // Scrolling down
+      if (window.scrollY > lastScrollY) {
+        navbar.classList.add('scrolled-down');
+        navbar.classList.remove('scrolled-up');
+      } 
+      // Scrolling up
+      else if (window.scrollY < lastScrollY) {
+        navbar.classList.remove('scrolled-down');
+        navbar.classList.add('scrolled-up');
+      }
+    } else {
+      navbar.classList.remove('scrolled-down');
+      navbar.classList.add('scrolled-up');
+    }
+    
+    lastScrollY = window.scrollY;
   });
 
   // Active navigation link based on scroll position
@@ -138,6 +165,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // GSAP Animations
   // Hero section animations
+  
+  // Text animation for title
+  const textElements = document.querySelectorAll('.text-animation');
+  textElements.forEach((element, index) => {
+    gsap.to(element, {
+      opacity: 1,
+      filter: 'blur(0px)',
+      duration: 0.8,
+      delay: 0.5 + (index * 0.3),
+      ease: 'power4.out'
+    });
+  });
+  
+  // Text animation for subtitle - starts after the title animation
+  const subtitleElements = document.querySelectorAll('.text-animation-subtitle');
+  subtitleElements.forEach((element, index) => {
+    gsap.to(element, {
+      opacity: 1,
+      filter: 'blur(0px)',
+      duration: 0.8,
+      delay: 2.2 + (index * 0.3), // Start after title animation (0.5 + 4*0.3 + 0.8)
+      ease: 'power4.out'
+    });
+  });
+  
   gsap.from('.text-content', {
     duration: 1,
     y: 50,
@@ -209,6 +261,40 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach(item => item.style.opacity = 1);
       }
     });
+  });
+
+  // Tech cards pop-up animation in Skills section
+  const techCards = document.querySelectorAll('.tech-card');
+  
+  // Ensure cards are initially hidden
+  techCards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "scale(0)";
+  });
+  
+  // Create a consistent sequence animation
+  const animateTechCards = () => {
+    techCards.forEach((card, index) => {
+      setTimeout(() => {
+        gsap.to(card, {
+          scale: 1,
+          opacity: 1,
+          duration: 0.6,
+          ease: 'back.out(1.7)',
+          onComplete: () => {
+            card.style.transform = 'none';
+          }
+        });
+      }, index * 200); // 200ms delay between each card
+    });
+  };
+  
+  // Create scroll trigger for the animation
+  ScrollTrigger.create({
+    trigger: '.skills',
+    start: 'top 60%',
+    onEnter: () => animateTechCards(),
+    once: false
   });
 
   // Project cards animation with improved reliability
