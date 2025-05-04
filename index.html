@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="dark-theme">
     <div class="cursor"></div>
@@ -18,20 +18,22 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="#home">AD.</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">AD</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,6 +44,7 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="text-content">
+                        <div class="location-tag">BASED IN INDIA</div>
                         <h1 class="title">Hi, I'm <span class="highlight">Aaditya Desai</span></h1>
                         <h2 class="subtitle">DevOps Engineer</h2>
                         <p class="description">Specializing in autonomous CI/CD pipelines and cutting-edge technologies.</p>
@@ -126,84 +129,126 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">My Skills</h2>
-                    <div class="underline"></div>
+                    <p class="section-description">I specialize in DevOps engineering with expertise in CI/CD pipelines, containerization, and cloud technologies.</p>
                 </div>
-                <div class="skills-content">
-                    <div class="skill-groups">
-                        <div class="skill-group">
-                            <h3>DevOps & Cloud</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                                    <h4>Git</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-docker"></i></div>
-                                    <h4>Docker</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
-                                    <h4>Jenkins</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
-                                    <h4>AWS</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                                </div>
-                            </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon git">
+                            <i class="fab fa-git-alt"></i>
                         </div>
-                        <div class="skill-group">
-                            <h3>Databases</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                    <h4>MySQL</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-leaf"></i></div>
-                                    <h4>MongoDB</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                                </div>
-                            </div>
+                        <div class="tech-info">
+                            <h3>Git</h3>
+                            <p>Version Control</p>
                         </div>
-                        <div class="skill-group">
-                            <h3>Programming & Web</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                    <h4>Python</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-                                    <h4>NodeJS</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                                    <h4>HTML</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                                    <h4>CSS</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fab fa-js"></i></div>
-                                    <h4>JavaScript</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                                    <h4>Vercel</h4>
-                                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                                </div>
-                            </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>Docker</h3>
+                            <p>Containerization</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon jenkins">
+                            <i class="fab fa-jenkins"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>Jenkins</h3>
+                            <p>CI/CD Pipeline</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>AWS</h3>
+                            <p>Cloud Platform</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>MySQL</h3>
+                            <p>Database</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon mongodb">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>MongoDB</h3>
+                            <p>NoSQL Database</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>Python</h3>
+                            <p>Programming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon nodejs">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>NodeJS</h3>
+                            <p>JavaScript Runtime</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>HTML</h3>
+                            <p>Markup Language</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon css">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>CSS</h3>
+                            <p>Styling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon javascript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>JavaScript</h3>
+                            <p>Programming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon vercel">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h3>Vercel</h3>
+                            <p>Deployment</p>
                         </div>
                     </div>
                 </div>
@@ -215,19 +260,15 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">My Projects</h2>
-                    <div class="underline"></div>
+                </div>
+                <div class="portfolio-header">
+                    <a href="#" class="all-projects-btn">View All <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/project-clothloop.jpg" alt="ClothLoop Project">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/aaditya-desai1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">ClothLoop</h3>
@@ -239,7 +280,7 @@
                                 <span>PHP</span>
                                 <span>MySQL</span>
                             </div>
-                            <button class="btn project-details-btn">View Details</button>
+                            <a href="https://github.com/aaditya-desai1" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     
@@ -247,12 +288,6 @@
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/project-datavizpro.jpg" alt="DataVizPro Project">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/aaditya-desai1/DataVizPro" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">DataVizPro</h3>
@@ -263,7 +298,7 @@
                                 <span>Node.js</span>
                                 <span>MongoDB</span>
                             </div>
-                            <button class="btn project-details-btn">View Details</button>
+                            <a href="https://github.com/aaditya-desai1/DataVizPro" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
