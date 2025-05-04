@@ -16,12 +16,12 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Interactive Grid Canvas -->
+    <canvas id="grid-canvas"></canvas>
+
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">
-                    <a href="#home">AD</a>
-                </div>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -49,8 +49,8 @@
                         <h2 class="subtitle">DevOps Engineer</h2>
                         <p class="description">Specializing in autonomous CI/CD pipelines and cutting-edge technologies.</p>
                         <div class="cta-buttons">
-                            <a href="#projects" class="btn primary-btn">View Projects</a>
-                            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                            <a href="#projects" class="btn primary-btn">See My Work <i class="fas fa-arrow-right"></i></a>
+                            <a href="assets/resume.pdf" download="Aaditya_Desai_Resume.pdf" class="btn secondary-btn">Download CV <i class="fas fa-download"></i></a>
                         </div>
                         <div class="social-links">
                             <a href="https://github.com/aaditya-desai1/" target="_blank" rel="noopener noreferrer" class="social-icon">
@@ -61,6 +61,9 @@
                             </a>
                             <a href="mailto:desaiadity2710@gmail.com" class="social-icon">
                                 <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </div>
                     </div>
@@ -103,6 +106,7 @@
                                     <li><i class="fas fa-laptop-code"></i> Exploring new tech</li>
                                     <li><i class="fas fa-cloud"></i> DevOps</li>
                                     <li><i class="fas fa-robot"></i> AI</li>
+                                    <li><i class="fas fa-server"></i> Cloud Computing</li>
                                 </ul>
                             </div>
                             <div class="hobbies">
@@ -114,10 +118,6 @@
                                     <li><i class="fas fa-motorcycle"></i> Riding</li>
                                 </ul>
                             </div>
-                        </div>
-                        
-                        <div class="resume-btn">
-                            <a href="assets/resume.pdf" download class="btn primary-btn">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@
                     <h2 class="section-title">My Projects</h2>
                 </div>
                 <div class="portfolio-header">
-                    <a href="#" class="all-projects-btn">View All <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="all-projects-btn">All Projects <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
@@ -280,7 +280,7 @@
                                 <span>PHP</span>
                                 <span>MySQL</span>
                             </div>
-                            <a href="https://github.com/aaditya-desai1" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/aaditya-desai1" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     
@@ -298,7 +298,7 @@
                                 <span>Node.js</span>
                                 <span>MongoDB</span>
                             </div>
-                            <a href="https://github.com/aaditya-desai1/DataVizPro" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/aaditya-desai1/DataVizPro" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -419,6 +419,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/grid-animation.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 
